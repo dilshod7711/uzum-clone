@@ -1,0 +1,16 @@
+{
+  "header": {
+    "search": "Search for products and categories",
+    "catalog": "Catalog",
+    "become": "Becoming a seller",
+    "open": "Open a delivery point",
+    "answer": "Questions and answers",
+    "delevery": "Delivery points",
+    "select": "Select a country…",
+    "order": "My orders",
+    "cart": "  Cart is empty. ",
+    "login": "Login",
+    "sorted": "Sorted",
+    "cart": "Cart"
+  }
+}

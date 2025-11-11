@@ -73,9 +73,6 @@
   }
 }
 
-header nav a.active {
-  color: #ffa155;
-  line-height: 1.5;
-  border-top: 2px solid #ffa155;
+/* header nav a.active {
   transition: all 0.3s ease-in-out;
-}
+} */
