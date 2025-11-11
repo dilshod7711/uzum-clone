@@ -4,11 +4,13 @@ import useContextApp from "../../hooks/useContextApp";
 import { Context } from "../../context";
 import { ToastContainer, toast } from "react-toastify";
 import { useEffect } from "react";
+import { useRef } from "react";
 
 const Home = () => {
   const { data, isLoading, setEror } = useProducts();
   const [cart, setCart] = useContextApp(Context);
 
+  const savat = useRef("Savatchaga");
   const notify = (msg) =>
     toast.success(msg, { position: "bottom-right", autoClose: 1500 });
 
@@ -109,7 +111,9 @@ const Home = () => {
                     className="w-full bg-purple-600 hover:bg-purple-700 text-white text-sm py-2 px-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2"
                   >
                     <ShoppingCart size={16} />
-                    <span className="cursor-pointer">Savatchaga</span>
+                    <span ref={savat} className="cursor-pointer">
+                      Savatchaga
+                    </span>
                   </button>
                   <ToastContainer />
                 </div>
