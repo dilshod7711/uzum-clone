@@ -4,6 +4,7 @@ import Home from "./pages/home/Home";
 import Cart from "./pages/cart/Cart";
 import { Context } from "./context";
 import { useState } from "react";
+import Detail from "./pages/cart/detail/Detail";
 
 const App = () => {
   const [cart, setcart] = useState([]);
@@ -12,6 +13,7 @@ const App = () => {
       <Routes>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/:id" element={<Detail />} />
           <Route path="/cart" element={<Cart />} />
         </Route>
       </Routes>
