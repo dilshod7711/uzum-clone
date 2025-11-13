@@ -191,7 +191,7 @@ const Detail = () => {
                 </span>
                 <span className="text-gray-400">|</span>
                 <span className="text-gray-500">
-                  {Math.floor(Math.random() * 1000) + 100}+ buyurtma
+                  100 + buyurtma
                 </span>
               </div>
 
